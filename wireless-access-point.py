@@ -4,7 +4,7 @@ import network
 import time
 
 ap = network.WLAN(network.AP_IF)
-ap.active(False) # Reset AP if already running in AP mode
+ap.active(False) # Reset AP if already running in another mode.
 #ap.config(ssid='PicoAP', channel=11, security=network.WLAN.SEC_WPA_WPA2, key='1234567890', pm=network.WLAN.PM_NONE)
 ap.config(ssid='PicoAP', channel=11, security=network.WLAN.SEC_OPEN, pm=network.WLAN.PM_NONE)
 ap.active(True)
